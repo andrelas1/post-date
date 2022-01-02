@@ -1,0 +1,27 @@
+{
+  "name": "post-date",
+  "version": "1.0.0",
+  "description": "Turnts a date instance into a nice formatted date string for blog posts",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrelas1/post-date.git"
+  },
+  "keywords": [
+    "date",
+    "blogpost",
+    "date",
+    "formatted",
+    "date"
+  ],
+  "author": "André Santos (andre.santos0906@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrelas1/post-date/issues"
+  },
+  "homepage": "https://github.com/andrelas1/post-date#readme"
+}
+
