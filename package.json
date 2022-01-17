@@ -1,13 +1,13 @@
 {
   "name": "post-date",
   "version": "1.0.0",
-  "type": "module",
   "description": "Turnts a date instance into a nice formatted date string for blog posts",
-  "main": "build/index.js",
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
   "scripts": {
-    "test": "mocha --watch",
-    "build": "tsc -p tsconfig.json",
-    "tsc:watch": "nodemon --watch \"src/**/*.test.ts\" --ext \"ts,json\" --exec \"tsc -p tsconfig.test.json\""
+    "test": "nodemon --watch \"test/**/*.test.js\" --ext \"js\" --exec \"mocha \"",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.commonjs.json",
+    "tsc:watch": "tsc -p tsconfig.test.json --watch --preserveWatchOutput"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/andrelas1/post-date#readme",
   "devDependencies": {
+    "@types/mocha": "^9.0.0",
     "nodemon": "^2.0.15",
     "typescript": "^4.5.4"
   },
